@@ -63,7 +63,7 @@ int thePath(int matrix[10][10], int i, int j) {
     for(int k=0; k<10; k++) {
         for(int z=0; z<10; z++) {
             for(int f=0; f<10; f++) {
-                if(ans[z][k]+ans[k][f]<ans[z][f]&&(ans[z][k]!=0||ans[k][f]!=0)) {
+                if(ans[z][k]+ans[k][f]<ans[z][f]&&(ans[z][k]!=0&&ans[k][f]!=0)) {
                     ans[z][f] = ans[z][k]+ans[k][f];
                 }
             }
